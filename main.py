@@ -43,6 +43,6 @@ gerente = Gerente("Eduardo Menegazzo", 20, 8000, 'Vendas', ["Ana", "João", "Ber
 estagiario = Estagiario("Lucas Pereira", 18, 1200, 2, "Atitus")
 vendedor = Vendedor("Gabriel Silva", 34, 3000, 10)
 
-print(gerente.trabalhar())
-print(estagiario.trabalhar())
-print(vendedor.trabalhar())
+funcionarios = [gerente, estagiario, vendedor]
+for f in funcionarios:
+    print(f.trabalhar())
